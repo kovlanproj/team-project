@@ -1,0 +1,21 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include respond-to('small') {
+    width: 320px;
+  }
+
+  @include respond-to('medium') {
+    width: 768px;
+  }
+
+  @include respond-to('large') {
+    width: 1200px;
+  }
+
+  border: 3px solid tomato;
+}
