@@ -1,16 +1,16 @@
 .about {
     background-color: #FFF5F6;
-    padding: 60px 20px 40px 20px;
+    // padding: 60px 20px 40px 20px;
+    padding-top: 60px;
+    padding-bottom: 20px;
 
-    @media screen and (min-width:1200px) {
-        padding: 60px 16px 20px 16px;  
-    }
 }
 
 .about__span {
     display: block;
     margin-bottom: 15px;
 
+    font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -29,11 +29,11 @@
     }
 }
 
-
 .about__title {
     margin-top: 0;
     margin-bottom: 32px;
 
+    font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
@@ -121,13 +121,16 @@
 }
 }
 
+.about__icon {
+    margin-left: 14px;
+}
+
 .overlay {
     @media screen and (min-width:767px) {
         display: flex;
     }
 
     @media screen and (min-width:1200px) {
-        max-width: 1200px;
         height: 521px;
         margin-left: auto;
         margin-right: auto;
