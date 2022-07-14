@@ -1,22 +1,27 @@
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .gallery {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-image: linear-gradient(to bottom, rgba(255, 245, 246, 1) 57px, rgba(255, 255, 255, 1) 57px, rgba(255, 255, 255, 1) 57px);
+    min-width: 320px;
+    background-image: linear-gradient(to bottom, rgba(255, 245, 246, 1) 60px, rgba(255, 255, 255, 1) 60px, rgba(255, 255, 255, 1) 60px);
 
     @include respond-to('medium') {
         padding-top: 60px;
         padding-bottom: 60px;
-        background-image: linear-gradient(to bottom, rgba(255, 245, 246, 1) 217px, rgba(255, 255, 255, 1) 217px, rgba(255, 255, 255, 1) 217px);
+        background-image: linear-gradient(to bottom, rgba(255, 245, 246, 1) 230px, rgba(255, 255, 255, 1) 230px, rgba(255, 255, 255, 1) 230px);
     }
 
         @include respond-to('large') {
-        background-image: linear-gradient(to bottom, rgba(255, 245, 246, 1) 149px, rgba(255, 255, 255, 1) 149px, rgba(255, 255, 255, 1) 149px);
+        background-image: linear-gradient(to bottom, rgba(255, 245, 246, 1) 150px, rgba(255, 255, 255, 1) 150px, rgba(255, 255, 255, 1) 150px);
+    }
+}
+
+.gallery__container {
+    padding-left: 0;
+    padding-right: 0;
+    
+    @include respond-to('large') {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -25,15 +30,86 @@ img {
 }
 
 .gallery__set {
-    @extend %flex-centered;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-width: 320px;
+
+    @include respond-to('medium') {
+        min-width: 768px;
+    }
+
+    @include respond-to('large') {
+        justify-content: center;
+    }
 }
 
 .gallery__pairs {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.gallery__img + .gallery__img {
+.gallery__pairs--first {
+    top: 45px;
+    
+    @include respond-to('medium') {
+        top: 107px;
+    }
+    
+    @include respond-to('large') {
+        top: 145px;
+    }
+}
+
+.gallery__pairs--second {
+    top: 28px;
+    
+    @include respond-to('medium') {
+        top: 65px;
+    }
+    
+    @include respond-to('large') {
+        top: 90px;
+    }
+}
+
+.gallery__pairs--fours {
+    top: 31px;
+    
+    @include respond-to('medium') {
+        top: 73px;
+    }
+    
+    @include respond-to('large') {
+        top: 99px;
+    }
+}
+
+.gallery__pairs--fifth {
+    top: 21px;
+    @include respond-to('medium') {
+        top: 50px;
+    }
+
+    @include respond-to('large') {
+        top: 66px;
+    }
+}
+
+.gallery__pairs--sixth {
+    top: 50px;
+    
+    @include respond-to('medium') {
+        top: 117px;
+    }
+    
+    @include respond-to('large') {
+        top: 153px;
+    }
+}
+
+.gallery__item + .gallery__item {
     margin-top: 2px;
 
     @include respond-to('medium') {
@@ -46,12 +122,6 @@ img {
 }
 
 .gallery__pairs + .gallery__pairs {
-    margin-left: 2px;
-
-    @include respond-to('medium') {
-        margin-left: 6px;
-    }
-
     @include respond-to('large') {
         margin-left: 8px;
     }
