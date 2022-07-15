@@ -160,9 +160,11 @@
   text-align: center;
   color: #ffffff;
   margin-bottom: 32px;
+  @include respond-to('medium') {
+    line-height: 1.76;
+  }
   @include respond-to('large') {
     font-size: 16px;
-    line-height: 1.75;
     margin-bottom: 60px;
   }
 }
