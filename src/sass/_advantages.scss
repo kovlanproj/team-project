@@ -11,27 +11,24 @@
   }
 }
 
-.advantages-container {
-  @include respond-to('large') {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 .advantages__list {
   @include respond-to('medium') {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+  }
+  @include respond-to('large') {
+    display: flex;
+    gap: 140px;
   }
 }
 
 .advantages__list-item {
-  max-width: 186px;
+  max-width: 230px;
   @include respond-to('medium') {
-    max-width: 152px;
+    max-width: 163px;
   }
   @include respond-to('large') {
-    max-width: 257px;
+    max-width: 260px;
   }
 }
 
@@ -69,7 +66,7 @@
 .advantages__list-item--heart::before {
   content: '';
   display: block;
-  background-image: url('../images/heart-gallery.png');
+  background-image: url('../images/heart-gallery.svg');
   width: 50px;
   height: 50px;
   margin-bottom: 16px;
