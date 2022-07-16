@@ -1,55 +1,57 @@
 <header class="header">
-    <div class="container header-thumb">
+    <div class="container header-thumb header-container">
         <picture>
             <source srcset="
-            images/Ice-logo.png  1x,
-            images/Ice-logo-2x.png  2x
+            ./images/Ice-logo.png  1x,
+            ./images/Ice-logo-2x.png  2x
             " media="(min-width: 320px)" />
-            <img class="header__img" src="./images/Ice-logo.png" alt="Main-logo" width="200" height="50">
+            <img class="header__img"src="./images/Ice-logo.png" alt="Main-logo" width="200" height="50">
         </picture>
         <button type="button" class="header__menu-open">
             <svg width="20" height="12">
-                <use href='./images/favicon.svg'>
+                <use
+                    href="./images/symbol-defs.svg#icon-burger">
                 </use>
             </svg>
-            <!--href="./images/symbol-defs.svg#icon-Burger">-->
         </button>
         <ul class="header__list">
-            <li class="header__item">Home</li>
-            <li class="header__item">About us</li>
-            <li class="header__item">How it's made?</li>
-            <li class="header__item">Our products</li>
-            <li class="header__item">Contact</li>
+            <li class="header__list-item">Home</li>
+            <li class="header__list-item">About us</li>
+            <li class="header__list-item">How it's made?</li>
+            <li class="header__list-item">Our products</li>
+            <li class="header__list-item">Contact</li>
         </ul>
         <button class="header__button" type="button">Buy now
             <svg class="header-icon" width="20" height="12">
-                <use href='./images/favicon.svg'>
+                <use
+                    href="./images/symbol-defs.svg#icon-icon">
                 </use>
             </svg>
-            <!--href="./images/symbol-defs.svg#icon-Vector-1"-->
         </button>
     </div>
-    <div class="header__menu is-hidden box one">
-        <button type="button" class="header__menu-close">
-            <svg width="20" height="12">
-                <use href='./images/favicon.svg'>
-                </use>
-            </svg>
-            <!--href="./images/symbol-defs.svg#icon-close"-->
-        </button>
-        <button class="menu__button" type="button">Buy now
-            <svg class="menu-icon" width="20" height="12">
-                <use href='./images/favicon.svg'>
-                </use>
-            </svg>
-            <!--href="./images/symbol-defs.svg#icon-Vector-1"-->
-        </button>
-        <ul class="menu__list">
-            <li class="menu__item">Home</li>
-            <li class="menu__item">About us</li>
-            <li class="menu__item">How it's made?</li>
-            <li class="menu__item">Our products</li>
-            <li class="menu__item">Contact</li>
-        </ul>
+    <div class="backdrop is-hidden" data-menu>
+        <div class="header__menu animation-close" data-menu-open>
+            <button type="button" class="header__menu-close">
+                <svg width="20" height="12">
+                    <use
+                        href="./images/symbol-defs.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+            <button class="menu__button" type="button">Buy now
+                <svg class="menu-icon" width="20" height="12">
+                    <use
+                        href="./images/symbol-defs.svg#icon-icon">
+                    </use>
+                </svg>
+            </button>
+            <ul class="menu__list">
+                <li class="menu__list-item">Home</li>
+                <li class="menu__list-item">About us</li>
+                <li class="menu__list-item">How it's made?</li>
+                <li class="menu__list-item">Our products</li>
+                <li class="menu__list-item">Contact</li>
+            </ul>
+        </div>
     </div>
 </header>
