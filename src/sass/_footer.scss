@@ -5,7 +5,7 @@ body {
     @extend %visually-hidden;
 }
 .footer__content {    
-    width: 100%;    
+    width: 100%;
     border-bottom: 1px solid #E1E1E1;
     @include respond-to('medium') {
             display: flex;
@@ -89,8 +89,7 @@ body {
 
 .socials__item {
     width: 32px;
-    height: 32px;
-    
+    height: 32px;    
 }
 
 .socials__link {
@@ -140,10 +139,16 @@ body {
     line-height: 1.52;
     text-align: center;    
     color: #907E82;
-}
-.footer__copytext {
-    display: block;
+    margin: 16px 0 3px 0;
     @include respond-to('medium') {
-        display: inline;
+            margin: 8px 0;
+        }    
+        @include respond-to('large') {
+            margin: 7px 0 4px 0;
         }
 }
+.footer__copytext {
+    display: block;    
+    @include respond-to('medium') {
+        display: inline;     
+    }}
