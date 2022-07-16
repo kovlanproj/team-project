@@ -131,7 +131,7 @@
     }
 
     @media screen and (min-width:1200px) {
-        height: 521px;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
         background-image: url('../images/milkbg-des-1x.png');
@@ -150,13 +150,12 @@
 .about__content {
     @media screen and (max-width:767px) {
         width: 280px;
-        height: 133px;
         margin-left: auto;
         margin-right: auto;
         background-image: url('../images/milkbg-mob-1x.png');
         background-repeat: no-repeat;
         background-position: 0px 50px;
-        background-size: cover;  
+        background-size: contain;  
     
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
