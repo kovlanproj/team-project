@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="container header-thumb">
+    <div class="container header-thumb header-container">
         <picture>
             <source srcset="
             ./images/Ice-logo.png  1x,
@@ -29,27 +29,29 @@
             </svg>
         </button>
     </div>
-    <div class="header__menu animation-close">
-        <button type="button" class="header__menu-close">
-            <svg width="20" height="12">
-                <use
-                    href="./images/symbol-defs.svg#icon-close">
-                </use>
-            </svg>
-        </button>
-        <button class="menu__button" type="button">Buy now
-            <svg class="menu-icon" width="20" height="12">
-                <use
-                    href="./images/symbol-defs.svg#icon-icon">
-                </use>
-            </svg>
-        </button>
-        <ul class="menu__list">
-            <li class="menu__list-item">Home</li>
-            <li class="menu__list-item">About us</li>
-            <li class="menu__list-item">How it's made?</li>
-            <li class="menu__list-item">Our products</li>
-            <li class="menu__list-item">Contact</li>
-        </ul>
+    <div class="backdrop is-hidden" data-menu>
+        <div class="header__menu animation-close" data-menu-open>
+            <button type="button" class="header__menu-close">
+                <svg width="20" height="12">
+                    <use
+                        href="./images/symbol-defs.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+            <button class="menu__button" type="button">Buy now
+                <svg class="menu-icon" width="20" height="12">
+                    <use
+                        href="./images/symbol-defs.svg#icon-icon">
+                    </use>
+                </svg>
+            </button>
+            <ul class="menu__list">
+                <li class="menu__list-item">Home</li>
+                <li class="menu__list-item">About us</li>
+                <li class="menu__list-item">How it's made?</li>
+                <li class="menu__list-item">Our products</li>
+                <li class="menu__list-item">Contact</li>
+            </ul>
+        </div>
     </div>
 </header>
