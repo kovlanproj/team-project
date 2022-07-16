@@ -1,14 +1,11 @@
 .header {
     padding-top: 8px;
     background-color: #FFB8CA;
-    z-index: 3;
     @include respond-to ('medium') {
         padding-top: 32px;
-        z-index: 10;
     }
     @include respond-to ('large') {
         padding-top: 37px;
-        z-index: 10;
     }
 }
 
@@ -30,6 +27,7 @@
 
 .header__list {
     display: none;
+    z-index: 3;
     @include respond-to ('large') {
         display: flex;
     }
@@ -54,6 +52,7 @@
 .header__list-link:hover,
 .header__list-link:focus {
     color: #D41443;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-thumb {
@@ -92,6 +91,7 @@
 .header__button:hover,
 .header__button:focus {
     background-color: #ECEBEB;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__button-hidden {
