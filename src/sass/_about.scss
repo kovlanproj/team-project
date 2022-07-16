@@ -1,9 +1,14 @@
 .about {
     background-color: #FFF5F6;
-    // padding: 60px 20px 40px 20px;
     padding-top: 60px;
     padding-bottom: 20px;
+}
 
+.container--about {
+    @media screen and (min-width: 1200px) {
+        padding-left: 0;
+        padding-right: 0;   
+    }   
 }
 
 .about__span {
