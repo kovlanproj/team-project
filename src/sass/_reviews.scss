@@ -29,3 +29,36 @@
   background-size: contain;
   background-image: url(../images/before.png);
 }
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: '';
+  background-image: url('../images/dot.svg');
+  background-repeat: no-repeat;
+  text-align: center;
+
+  opacity: 1;
+  color: black;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  content: '';
+  background-image: url('../images/house.svg');
+  background-repeat: no-repeat;
+
+  opacity: 1;
+  color: black;
+}
