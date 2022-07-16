@@ -1,0 +1,306 @@
+// hero & container
+
+.hero{
+    background-color: #FFB8CA;
+    height: 444px;
+    overflow: hidden;
+    display: flex;
+    @include respond-to('medium'){
+        height: 334px;
+        overflow: unset;
+    }
+    @include respond-to('large'){
+        height: 577px;
+    }
+}
+
+.hero .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    // width: 100%;
+    @include respond-to('medium') {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @include respond-to('large') {
+        padding-right: 16px;
+        padding-left: 16px;
+        max-width: 1200px;
+    }
+}
+
+
+.hero__flex{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+// container with title
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 136px;
+    @include respond-to('medium'){
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    @include respond-to('large'){
+        padding-top: 60px;
+        margin-bottom: 40px;
+    }
+}
+
+.hero__container-title{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.1438;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 218px;
+    margin-bottom: 20px;
+    z-index: 3;
+    @include respond-to('medium'){
+        font-size: 22px;
+        line-height: 25px;
+    }
+    @include respond-to('large'){
+        font-size: 38px;
+        line-height: 44px;
+        min-width: 277px;
+        margin-bottom: 24px;
+    }
+}
+
+.hero__container-title-span{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.958;
+    text-transform: uppercase;
+    color: #D41443; 
+    @include respond-to('medium'){
+        font-size: 34px;
+        line-height: 0.911;
+    }
+    @include respond-to('large'){
+        font-size: 58px;
+        line-height: 52px;
+    }
+}
+
+.button__list{
+    display: flex;
+    z-index: 3;
+}
+
+.button__list-link{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 6px 14px;
+    border-radius: 20px;
+    @include respond-to('large'){
+        font-size: 14px;
+        line-height: 18px;
+        padding: 11px 24px;
+    }
+}
+
+.product-link{
+    background-color: #D41443;
+    margin-right: 8px;
+    color: #FFFFFF;
+    @include respond-to('large'){
+        margin-right: 12px;
+    }
+}
+
+.how-made-link{
+    background-color: #FFFFFF;
+    color: #D41443;
+}
+
+// quantity container
+
+.quantity__container{
+    display: none;
+    z-index: 2;
+    @include respond-to('medium'){
+        display: unset;
+        padding-top: 12px;
+        padding-right: 10px;
+    }
+    @include respond-to('large'){
+        padding-top: 69px;
+        padding-left: 18px;
+    }
+}
+
+.quantity__container-item{
+    position: relative;
+    z-index: 2;
+}
+
+.quantity__container-number{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+    z-index: 2;
+    @include respond-to('large'){
+        font-size: 46px;
+        line-height: 53px;
+    }
+}
+
+.quantity__container-circle{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    top: 0;
+    right: -10px;
+    z-index: -1;
+    @include respond-to('large'){
+        width: 30px;
+        height: 30px;
+        right: -12px;
+    }
+}
+
+.quantity__container-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: #FFFFFF;
+    z-index: 2;
+    @include respond-to('large'){
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.quantity{
+    z-index: 1;
+}
+
+// container about milk
+
+.bio__container{
+    display: none;
+    @include respond-to('medium'){
+        display: flex;
+    }
+}
+
+.bio__container-image{
+    display: none;
+    @include respond-to ('medium'){
+        display: block;
+    }
+}
+
+.bio__container-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.bio__container-text{
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    height: auto;
+    width: 114px;
+    padding-top: 41px;
+    z-index: 4;
+    margin-bottom: 7px;
+    @include respond-to('large'){
+        font-size: 14px;
+        line-height: 1.4;
+        min-width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+// tasty container
+
+.tasty__container{
+    z-index: 2;
+}
+
+.tasty__container-image{
+    display: none;
+    @include respond-to('medium'){
+        display: block;
+        padding-top: 19px;
+    }
+    @include respond-to('large'){
+        padding-top: 28px;
+    }
+}
+
+// absolute image
+
+.image__container-image{
+    position: absolute;
+    display: unset;
+    top: -252px;
+    right: 0;
+    z-index: 2;
+    @include respond-to('medium'){
+        width: 143px;
+        height: 336px;
+        right: 271px;
+        top: -335px;
+    }
+    @include respond-to('large'){
+        width: 236px;
+        height: 557px;
+        top: -556px;
+        right: 312px;
+    }
+}
+
+.image__container::before{
+    position: absolute;
+    content: "";
+    width: 346px;
+    height: 344px;
+    border-radius: 100%;
+    background-color: #FFA5BA;
+    top: -261px;
+    right: -83px;
+    @include respond-to('medium'){
+        width: 335px;
+        height: 333px;
+        top: -373px;
+        right: 153px;
+    }
+    @include respond-to('large'){
+        width: 534px;
+        height: 534px;
+        top: -611px;
+        right: 133px;
+    }
+}
+
