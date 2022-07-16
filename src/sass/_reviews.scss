@@ -1,0 +1,31 @@
+.reviews-slider {
+  display: flex;
+}
+
+.reviews-text {
+  background-color: #fafafa;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  color: #000000;
+  margin-top: 32px;
+}
+
+.reviews-text > span {
+  background-image: linear-gradient(to right, #e1e1e1 0%, #e1e1e1 100%);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 100% 1px;
+}
+
+.reviews-text::before {
+  content: '';
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  background-size: contain;
+  background-image: url(../images/before.png);
+}
