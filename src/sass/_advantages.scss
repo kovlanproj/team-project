@@ -1,0 +1,124 @@
+.advantages__title {
+  @extend %visually-hidden;
+}
+.advantages {
+  background-color: #fff5f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include respond-to('large') {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.advantages__list {
+  @include respond-to('medium') {
+    display: flex;
+    gap: 20px;
+  }
+  @include respond-to('large') {
+    display: flex;
+    gap: 140px;
+  }
+}
+
+.advantages__list-item {
+  max-width: 230px;
+  @include respond-to('medium') {
+    max-width: 163px;
+  }
+  @include respond-to('large') {
+    max-width: 260px;
+  }
+}
+
+.advantages__list-item--milk-bottle::before {
+  content: '';
+  display: block;
+  background-image: url('../images/milk-bottle.svg');
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  @include respond-to('medium') {
+    margin-bottom: 45px;
+  }
+  @include respond-to('large') {
+    margin-bottom: 50px;
+  }
+}
+.advantages__list-item--apples::before {
+  content: '';
+  display: block;
+  background-image: url('../images/apples-gallery.svg');
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include respond-to('medium') {
+    margin-bottom: 45px;
+  }
+}
+
+.advantages__list-item--heart::before {
+  content: '';
+  display: block;
+  background-image: url('../images/heart-gallery.svg');
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include respond-to('medium') {
+    margin-bottom: 45px;
+  }
+}
+.advantages__list-item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @include respond-to('medium') {
+    margin-bottom: 0;
+  }
+}
+.advantages__list-item--title {
+  margin-bottom: 25px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+
+  @include respond-to('medium') {
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+  @include respond-to('large') {
+    margin-bottom: 30px;
+    font-size: 58px;
+  }
+}
+
+.advantages__list-item--subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #000000;
+
+  @include respond-to('medium') {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @include respond-to('large') {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
