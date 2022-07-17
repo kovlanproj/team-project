@@ -4,3 +4,54 @@
         </use>
     </svg>
 </a>
+
+<!-- <a href="#" class="js-open-modal" data-modal="buy-now">Buy now</a>
+<a href="#" class="js-open-modal" data-modal="about">About</a>
+<a href="#" class="js-open-modal" data-modal="locations">Locations</a>
+<a href="#" class="js-open-modal" data-modal="franchise">Franchise</a> -->
+
+<!-- Подложка под модальным окном -->
+<div class="modal-overlay js-overlay-modal"></div>
+
+
+<!-- Модалка Buy now -->
+<div class="modal" data-modal="buy-now">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="images/symbol-defs.svg#modal-cross"></use>
+    </svg>
+    <p class="modal__title">Buy now</p>
+    <form class="buy-now">
+        <div class="name">
+            <label for="name" class="name__label">Name</label>
+            <input type="text" name="name" id="name" class="name__input" />
+        </div>
+        <div class="tel">
+            <label for="tel" class="tel__label">Phone</label>
+            <input type="tel" name="tel" id="tel" class="tel__input" />
+        </div>
+        <div class="mail">
+            <label for="email" class="mail__label">Email</label>
+            <input type="email" name="mail" id="email" class="mail__input" />
+        </div>
+        <div class="comment">
+            <label for="comment" class="comment__label">Comment</label>
+            <textarea name="comment" id="comment" class="comment__text" placeholder="Enter text"></textarea>
+        </div>
+        <div class="checkbox">
+            <label class="policy"><input type="checkbox" name="policy" class="policy__text visually-hidden" />
+                <span class="policy__icon"></span>
+                I accept
+                <a href="" class="policy__part"> the agreement terms</a>
+            </label>
+        </div>
+        <div class="send">
+            <button type="submit" class="send__button">
+                Send
+                <svg width="15" height="15" class="svg">
+                    <use href="./images/symbol-defs.svg#icon-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </form>
+</div>
