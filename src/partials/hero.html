@@ -1,82 +1,88 @@
 <section class="hero">
     <div class="container">
-        <div class="hero__flex">
-            <div class="hero__container">
-                <h1 class="hero__container-title">ice cream<br /> made with <span
-                        class="hero__container-title-span">passion</span></h1>
-                <ul class="button__list list">
-                    <li class="button__list-item product-item">
-                        <a class="button__list-link product-link link" href="#products">Products</a>
-                    </li>
-                    <li class="button__list-item how-made-item">
-                        <a class="button__list-link how-made-link link" href="#how-made">How it's made?</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="quantity__container">
-                <ul class="quantity__container-list">
-                    <li class="quantity__container-item">
-                        <p class="quantity__container-number">16</p>
-                        <div class="quantity__container-circle"></div>
-                        <p class="quantity__container-text">cafes</p>
-                    </li>
-                    <li class="quantity__container-item">
-                        <p class="quantity__container-number">23</p>
-                        <div class="quantity__container-circle"></div>
-                        <p class="quantity__container-text">food trucks</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="hero__flex">
-            <div class="bio__container">
-                <picture>
-                    <source srcset="
-                    ./images/desk-milk.png x1,
-                    ./images/desk-milk-2x.png 2x" media="(min-width:1200px)" />
-                    <source srcset="
-                    ./images/tab-milk.png x1,
-                    ./images/tab-milk-2x.png 2x" media="(min-width:768px)" />
-                    <img class="bio__container-image" src="./images/tab-milk.png" alt="icecream">
-                </picture>
-                <div class="bio__container-info">
-                    <p class="bio__container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et</p>
-                    <button class="bio_container-button" type="button">
-                        <svg class="bio_container-icon" height="18" width="18">
-                            <use href="./images/favicon.svg"></use>
-                        </svg>
-                    </button>
+        <div class="container__flex">
+            <div class="hero__flex">
+                <div class="hero__container">
+                    <h1 class="hero__container-title">ice cream<br /> made with <span
+                            class="hero__container-title-span">passion</span></h1>
+                    <ul class="button__list list">
+                        <li class="button__list-item product-item">
+                            <a class="button__list-link product-link link" href="#products">Products</a>
+                        </li>
+                        <li class="button__list-item how-made-item">
+                            <a class="button__list-link how-made-link link" href="#how-made">How it's made?</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quantity__container">
+                    <ul class="quantity__container-list">
+                        <li class="quantity__container-item">
+                            <p class="quantity__container-number">16</p>
+                            <div class="quantity__container-circle"></div>
+                            <p class="quantity__container-text">cafes</p>
+                        </li>
+                        <li class="quantity__container-item">
+                            <p class="quantity__container-number">23</p>
+                            <div class="quantity__container-circle"></div>
+                            <p class="quantity__container-text">food trucks</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="tasty__container">
-                <picture>
-                    <source srcset="
-                    ./images/desk-tasty.png x1,
-                    ./images/desk-tasty-2x.png 2x" media="(min-width:1200px)" />
-                    <source srcset="
-                    ./images/tab-tasty.png x1,
-                    ./images/tab-tasty-2x.png 2x" media="(min-width:768px)" />
-                    <img class="tasty__container-image" src="./images/tab-tasty.png" alt="icecream">
-                </picture>
+            <div class="hero__flex">
+                <div class="bio__container">
+                    <picture>
+                        <source srcset="
+                        ./images/desk-milk.png x1,
+                        ./images/desk-milk-2x.png 2x" media="(min-width:1200px)" />
+                        <source srcset="
+                        ./images/tab-milk.png x1,
+                        ./images/tab-milk-2x.png 2x" media="(min-width:768px)" />
+                        <img class="bio__container-image" src="./images/tab-milk.png" alt="icecream">
+                    </picture>
+                    <div class="bio__container-info">
+                        <p class="bio__container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et</p>
+                        <button class="bio_container-button" type="button">
+                            <div class="bio_container-cirle">
+                                <svg class="bio_container-icon" height="8" width="8">
+                                    <use href="./images/symbol-defs.svg#icon-arrow-without-circle"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="tasty__container">
+                    <picture>
+                        <source srcset="
+                        ./images/desk-tasty.png x1,
+                        ./images/desk-tasty-2x.png 2x" media="(min-width:1200px)" />
+                        <source srcset="
+                        ./images/tab-tasty.png x1,
+                        ./images/tab-tasty-2x.png 2x" media="(min-width:768px)" />
+                        <img class="tasty__container-image" src="./images/tab-tasty.png" alt="icecream">
+                    </picture>
+                </div>
+            </div>
+            <div class="hero__flex">
+                <div class="image__container">
+                    <picture>
+                        <source srcset="
+                        ./images/desk-icecream.png x1,
+                        ./images/desk-icecream-2x.png 2x" media="(min-width:1200px)" />
+                        <source srcset="
+                        ./images/tab-icecream.png x1,
+                        ./images/tab-icecream-2x.png 2x" media="(min-width:768px)" />
+                        <source srcset="
+                        ./images/mob-icecream.png x1,
+                        ./images/mob-icecream-2x.png 2x" media="(min-width:320px)" />
+                        <img class="image__container-image" src="./images/mob-icecream.png" width="171" height="410"
+                            alt="icecream">
+                    </picture>
+                    <div class="image__container-circle"></div>
+                </div>
             </div>
         </div>
-        <div class="hero__flex">
-            <div class="image__container">
-                <picture>
-                    <source srcset="
-                    ./images/desk-icecream.png x1,
-                    ./images/desk-icecream-2x.png 2x" media="(min-width:1200px)" />
-                    <source srcset="
-                    ./images/tab-icecream.png x1,
-                    ./images/tab-icecream-2x.png 2x" media="(min-width:768px)" />
-                    <source srcset="
-                    ./images/mob-icecream.png x1,
-                    ./images/mob-icecream-2x.png 2x" media="(min-width:320px)" />
-                    <img class="image__container-image" src="./images/mob-icecream.png" width="171" height="410"
-                        alt="icecream">
-                </picture>
-            </div>
-        </div>
+        
     </div>
 </section>
