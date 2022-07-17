@@ -4,6 +4,8 @@
         closeMenuBtn: document.querySelector('.header__menu-close'),
         menu: document.querySelector('[data-menu]'),
         menuopen: document.querySelector('[data-menu-open]'),
+        buttonhidden: document.querySelector('.header__menu-open'),
+        button: document.querySelector('.header__button'),
         body: document.querySelector('body'),
         animation: document.querySelector('.animation'),
         openAnimation: document.querySelector('.header__menu-open'),
@@ -19,6 +21,9 @@
     refs.closeAnimationClose.addEventListener('click', toggleAnimation);
     refs.openAnimationClose.addEventListener('click', toggleAnimationClose);
     refs.closeAnimationClose.addEventListener('click', toggleAnimationClose);
+    refs.buttonhidden.addEventListener('click', toggleButtonHidden);
+    refs.openAnimationClose.addEventListener('click', toggleButtonHidden);
+    refs.closeAnimationClose.addEventListener('click', toggleButtonHidden);
 
     function toggleMenu() {
         refs.menu.classList.toggle('is-hidden');
@@ -29,5 +34,8 @@
     }
     function toggleAnimationClose() {
         refs.menuopen.classList.toggle('animation-close');
+    }
+    function toggleButtonHidden() {
+        refs.button.classList.toggle('header__button-hidden');
     }
     })();
