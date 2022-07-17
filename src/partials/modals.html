@@ -55,3 +55,42 @@
         </div>
     </form>
 </div>
+
+<!-- Модалка About -->
+<div class="modal modal--about" data-modal="about">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="images/symbol-defs.svg#modal-cross"></use>
+    </svg>
+    <p class="modal-about__title">tradition and love</p>
+
+    <div class="field-about">
+        <p class="field-about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, perspiciatis
+            incidunt? Quasi quod ea qui eos fuga ab molestiae quisquam! Dolorum nesciunt vel suscipit placeat officia
+            temporibus expedita consequuntur blanditiis?</p>
+
+        <label class="user-about">Name
+            <input class="user-about__input" type="text" name="name" autofocus autocomplete="off">
+        </label>
+
+        <label class="user-about">Mobile
+            <input class="user-about__input" type="tel" name="tel" autocomplete="off">
+        </label>
+
+        <label class="user-about user-about--comment" for="comment">Your favor</label>
+        <textarea class="user-about__texterea" name="comment" id="comment" rows="10"
+            placeholder="Your favor"></textarea>
+        <label class="checkbox-about">
+            <input class="checkbox-about__input" type="checkbox" name="">
+            <span class="checkbox-about__box">
+                <svg class="checkbox-about__icon" width="11" height="8">
+                    <use href="images/symbol-defs.svg#check"></use>
+                </svg>
+            </span>
+            I confirm the correctness of the data</a>
+        </label>
+
+    </div>
+    <button type="submit" class="user-about__button">Send</button>
+    </form>
+</div>
