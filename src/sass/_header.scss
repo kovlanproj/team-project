@@ -43,6 +43,7 @@
     align-items: center;
     color: #FFFFFF;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .header__list-item:not(:last-child) {
@@ -70,6 +71,7 @@
 
 .header__button {
     display: none;
+    cursor: pointer;
     @include respond-to ('medium') {
     font-family: 'DM Sans';
     font-style: normal;
@@ -197,6 +199,7 @@
     padding-bottom: 12px;
     border-top: 1px solid #E18298;
     text-decoration: none;
+    cursor: pointer;
     @include respond-to ('large') {
         display: none;
     }
