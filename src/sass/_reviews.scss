@@ -1,0 +1,148 @@
+// ---------------------SLIDER------------------
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: '';
+  background-image: url('../images/dot.svg');
+  background-repeat: no-repeat;
+  text-align: center;
+
+  opacity: 1;
+  color: black;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  content: '';
+  background-image: url('../images/house.svg');
+  background-repeat: no-repeat;
+
+  opacity: 1;
+  color: black;
+}
+
+// -------------------CONTENT------------------------
+
+.reviews-slider {
+  display: flex;
+}
+
+.reviews-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews-text {
+  background-color: #fafafa;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  color: #000000;
+  margin-top: 32px;
+  padding: 43px 58px 26px 65px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    padding: 37px 55px 44px 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 186%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 47px 109px 39px 109px;
+  }
+}
+
+.reviews-text > span {
+  background-image: linear-gradient(to right, #e1e1e1 0%, #e1e1e1 100%);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 100% 1px;
+}
+
+.reviews-text::before {
+  content: '';
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  background-size: contain;
+  background-image: url(../images/before.png);
+}
+
+.revies-name {
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+  color: #000000;
+  margin-top: 16px;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 186%;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 500;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 500;
+  }
+}
+
+.reviews-icon-bottom {
+  align-items: center;
+}
+
+.reviews-text-wrap::after {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 4px;
+  background-size: contain;
+  background-image: url(../images/Group_8.png);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  @media screen and (min-width: 768px) {
+    margin-top: 4px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 16px;
+  }
+}
+
+.reviews-text-wrap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  @media screen and (min-width: 768px) {
+    width: 620px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+  }
+}
