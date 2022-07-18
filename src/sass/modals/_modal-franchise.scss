@@ -1,10 +1,10 @@
-.modal--about {
+.modal--franchise {
   margin-left: auto;
   margin-right: auto;
   background-image: url('../images/milkbg-des-1x.png'),
     url(../images/products-pic-mob1x.png);
   background-repeat: no-repeat;
-  background-position: center, 4% 65%;
+  background-position: center, 4% 70%;
   background-size: contain, 150px;
 
   @media (min-device-pixel-ratio: 2),
@@ -14,7 +14,7 @@
   }
 }
 
-.modal-about__title {
+.modal-franchise__title {
   margin-top: 0;
   margin-bottom: 32px;
 
@@ -29,7 +29,7 @@
   color: #d41443;
 }
 
-.field-about__text {
+.field-franchise__text {
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
@@ -38,7 +38,7 @@
   color: #907e82;
 }
 
-.user-about {
+.user-franchise {
   position: relative;
 
   display: block;
@@ -54,10 +54,11 @@
   color: #d41443;
 }
 
-.user-about__input {
-  width: 75%;
+.user-franchise__input {
+  width: 325px;
   height: 40px;
   margin-top: 4px;
+  margin-left: 5px;
   padding-left: 10px;
 
   font-style: normal;
@@ -78,12 +79,20 @@
   }
 }
 
-.user-about--comment {
+.user-franchise__input--mob {
+  margin-left: 2px;
+}
+
+.user-franchise__input--name {
+  margin-left: 10px;
+}
+
+.user-franchise--comment {
   margin-bottom: 4px;
   margin-left: 40px;
 }
 
-.user-about__texterea {
+.user-franchise__texterea {
   resize: none;
   height: 120px;
   padding: 12px 16px;
@@ -102,7 +111,7 @@
   &::placeholder {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.16;
     color: #ffa5ba;
   }
@@ -115,7 +124,7 @@
   }
 }
 
-.user-about__button {
+.user-franchise__button {
   display: inline-block;
   width: 176px;
   height: 44px;
@@ -140,7 +149,7 @@
   }
 }
 
-.checkbox-about {
+.checkbox-franchise {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +168,7 @@
   }
 }
 
-.checkbox-about__input {
+.checkbox-franchise__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -169,22 +178,24 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
 
-  &:checked + .checkbox-about__box {
+  &:checked + .checkbox-franchise__box {
     background-color: #ffa5ba;
     border-color: #ffa5ba;
   }
 }
 
-.checkbox-about__icon {
+.checkbox-franchise__icon {
   fill: transparent;
 }
 
-.checkbox-about__input:checked + .checkbox-about .checkbox-about__icon {
+.checkbox-franchise__input:checked
+  + .checkbox-franchise
+  .checkbox-franchise__icon {
   fill: #ffffff;
   border: 0.2px solid #ffffff;
 }
 
-.checkbox-about__box {
+.checkbox-franchise__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,7 +206,7 @@
   border-radius: 3px;
 }
 
-.checkbox-about__link {
+.checkbox-franchise__link {
   color: #ffa5ba;
   margin-left: 2px;
 }
