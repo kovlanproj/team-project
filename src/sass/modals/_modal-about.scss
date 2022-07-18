@@ -1,17 +1,11 @@
 .modal--about {
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 245, 246, 0.85),
-      rgba(255, 245, 246, 0.85)
-    ),
-    url('../images/milkbg-des-1x.png'), url(../images/ice-third.png);
-
+  background-image: url('../images/milkbg-des-1x.png');
   background-repeat: no-repeat;
-  background-position: center, 0 90%;
-  background-size: contain, 300px;
-  opacity: 0.5;
+  background-position: center;
+  background-size: contain, cover;
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -41,8 +35,8 @@
 }
 
 .field-about__text {
-  text-align: left;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -52,4 +46,13 @@
   &--dark {
     color: #000000;
   }
+}
+
+.field-about__img {
+  width: 35%;
+}
+
+.field-about__item {
+  display: flex;
+  margin-bottom: 10px;
 }
