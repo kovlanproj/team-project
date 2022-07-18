@@ -16,6 +16,7 @@
     border: none;
     height: 12px;
     padding-bottom: 18px;
+    cursor: pointer;
     @include respond-to ('medium') {
         margin-left: auto;
         margin-right: 32px;
@@ -145,6 +146,7 @@
     right: 20px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
     @include respond-to ('large') {
         display: none;
     }
