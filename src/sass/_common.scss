@@ -1,10 +1,18 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
 
   font-family: 'DM Sans', sans-serif;
   letter-spacing: 0.04em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,
