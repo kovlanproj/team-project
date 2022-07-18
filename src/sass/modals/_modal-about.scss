@@ -1,4 +1,10 @@
 .modal--about {
+  @media screen and (max-width: 480px) {
+    position: fixed;
+    max-width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+  }
   margin-left: auto;
   margin-right: auto;
   background-image: url('../images/milkbg-des-1x.png');
@@ -20,7 +26,7 @@
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.04em;
@@ -32,25 +38,40 @@
   &:focus {
     text-shadow: -7px -3px 3px rgba(255, 165, 186, 0.71);
   }
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 34px;
+  }
 }
 
 .field-about__text {
   margin-top: 15px;
   margin-bottom: 10px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 11px;
   line-height: 1.58;
   color: #907e82;
 
   &--dark {
     color: #000000;
   }
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 12px;
+  }
 }
 
-.field-about__img {
-  width: 35%;
-}
+// .field-about__img {
+//   @media screen and (max-width: 767px) {
+//     // display: none;
+//   }
+//   @media screen and (min-width: 768px) {
+//     // width: 35%;
+//   }
+// }
 
 .field-about__item {
   display: flex;
