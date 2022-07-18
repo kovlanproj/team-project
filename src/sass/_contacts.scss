@@ -297,3 +297,10 @@
 .connect__button-icon {
   margin-left: 10px;
 }
+
+.connect__button {
+  &:hover,
+  &:focus {
+    background-color: #ECEBEB;;
+  }
+}
