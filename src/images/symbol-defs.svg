@@ -57,5 +57,11 @@
                 d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z">
             </path>
         </symbol>
+        <symbol id="check" viewBox="0 0 42 32">
+            <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff"
+                stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64"
+                d="M6.262 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.408 10.88 0.221-0.211 24.256-23.139-0.243-0.23-3.043-2.902-0.221 0.211-20.97 19.987-8.125-7.75z">
+            </path>
+        </symbol>
     </defs>
 </svg>
