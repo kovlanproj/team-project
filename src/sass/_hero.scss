@@ -409,7 +409,7 @@
     }
 }
 
-.image__container-circle{
+.image__container::before{
     position: absolute;
     content: "";
     width: 346px;
