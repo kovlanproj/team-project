@@ -54,7 +54,9 @@
 .header__list-link:hover,
 .header__list-link:focus {
     color: #D41443;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-25%);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-thumb {
@@ -94,7 +96,9 @@
 .header__button:hover,
 .header__button:focus {
     background-color: #ECEBEB;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-10%);
+    transition-duration: 750ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__button-hidden {
