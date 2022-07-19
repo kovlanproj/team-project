@@ -48,6 +48,10 @@
   }
 }
 
+.reviews__title {
+  @extend %visually-hidden;
+}
+
 .reviews-slider {
   display: flex;
 }
