@@ -32,7 +32,7 @@ textarea {
 .comment__label {
   text-align: left;
   display: block;
-  color: #ffb8ca;
+  color: #d41443;
 }
 .name__input,
 .tel__input,
@@ -98,6 +98,10 @@ textarea {
 }
 .policy__part {
   margin-left: 4px;
+  color: #ffffff;
+}
+.policy__part:hover,
+.policy__part:focus {
   color: #d41443;
 }
 
