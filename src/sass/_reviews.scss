@@ -26,14 +26,27 @@
 
 .slick-dots li.slick-active button:before {
   content: '';
-  background-image: url('../images/house.svg');
+  background-image: url('../images/home_new.svg');
   background-repeat: no-repeat;
 
   opacity: 1;
   color: black;
 }
 
-// -------------------CONTENT------------------------
+// -------------------REVIEWS CONTENT------------------------
+
+.reviews {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
 
 .reviews-slider {
   display: flex;
@@ -45,7 +58,7 @@
   margin-right: auto;
 }
 
-.reviews-text {
+.revies-text {
   background-color: #fafafa;
   font-family: 'DM Sans';
   font-style: normal;
@@ -85,7 +98,7 @@
   width: 54px;
   height: 40px;
   background-size: contain;
-  background-image: url(../images/before.png);
+  background-image: url('../images/before.png');
 }
 
 .revies-name {
@@ -94,12 +107,14 @@
   text-align: center;
   color: #000000;
   margin-top: 16px;
+  margin-bottom: 16px;
   font-weight: 500;
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 186%;
     text-align: center;
     margin-top: 16px;
+    margin-bottom: 32px;
     font-weight: 500;
   }
   @media screen and (min-width: 1200px) {
@@ -107,6 +122,7 @@
     line-height: 186%;
     text-align: center;
     margin-top: 16px;
+    margin-bottom: 33px;
     font-weight: 500;
   }
 }
@@ -121,7 +137,7 @@
   width: 32px;
   height: 4px;
   background-size: contain;
-  background-image: url(../images/Group_8.png);
+  background-image: url('../images/Group 8.png');
   display: block;
   margin-left: auto;
   margin-right: auto;
