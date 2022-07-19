@@ -22,11 +22,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   @include respond-to('medium') {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     gap: 32px;
   }
   @include respond-to('large') {
@@ -117,18 +117,18 @@
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: #000000;
-  padding-top: 20px;
-  padding-bottom: 8px;
+  margin-top: 20px;
+  margin-bottom: 8px;
 
   @include respond-to('medium') {
     font-size: 14px;
-    padding-top: 32px;
-    padding-bottom: 12px;
+    margin-top: 32px;
+    margin-bottom: 12px;
   }
   @include respond-to('large') {
     font-size: 16px;
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-top: 32px;
+    margin-bottom: 8px;
   }
 }
 
@@ -165,9 +165,9 @@
 }
 
 .contacts__day {
-  padding-top: 8px;
+  margin-top: 8px;
   @include respond-to('medium') {
-    padding-top: 12px;
+    margin-top: 12px;
   }
 }
 
@@ -227,16 +227,12 @@
 }
 
 .connect__item {
-  &:not(:last-child) {
-    padding-bottom: 10px;
-
     @include respond-to('medium') {
-      padding-right: 15px;
+      margin-right: 15px;
     }
     @include respond-to('large') {
     }
   }
-}
 
 .connect__btn {
   display: flex;
