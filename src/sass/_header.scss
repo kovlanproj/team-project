@@ -45,6 +45,9 @@
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
+    transform: translateY(15%);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__list-item:not(:last-child) {
@@ -54,7 +57,7 @@
 .header__list-link:hover,
 .header__list-link:focus {
     color: #D41443;
-    transform: translateY(-25%);
+    transform: translateY(-15%);
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -75,6 +78,9 @@
 .header__button {
     display: none;
     cursor: pointer;
+    transform: translateY(10%);
+    transition-duration: 750ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include respond-to ('medium') {
     font-family: 'DM Sans';
     font-style: normal;
