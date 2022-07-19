@@ -12,7 +12,7 @@
   width: 20px;
   height: 20px;
 
-  content: '';
+  content: '' !important;
   background-image: url('../images/dot.svg');
   background-repeat: no-repeat;
   text-align: center;
