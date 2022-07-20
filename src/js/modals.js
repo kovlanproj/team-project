@@ -35,22 +35,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
       sendButton.addEventListener('click', function (el) {
         el.preventDefault();
-        const markup = modalElem.innerHTML;
+        let markup = modalElem.innerHTML;
 
         modalElem.innerHTML =
           '<p class="window__text" style="background-color: #ffffff; padding: 10px; border-radius: 10px;">Good! Your order is accepted! Thanks❤️</p>';
-
+        window.removeEventListener('keydown', onEscKeyPress);
         setTimeout(() => {
           document.querySelector('.modal.active').classList.remove('active');
           document
             .querySelector('.modal-overlay.active')
             .classList.remove('active');
           document.body.classList.remove('modal-open');
-          window.removeEventListener('keydown', onEscKeyPress);
-        }, 3000);
+        }, 2000);
         setTimeout(() => {
+          // console.log(markup);
           modalElem.innerHTML = markup;
-        }, 4000);
+        }, 2250);
       });
     }); // end click
   }); // end foreach
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
       const parentModal = this.closest('.modal');
-
+      // console.log(e);
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
       document.body.classList.remove('modal-open');
