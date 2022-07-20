@@ -11,16 +11,15 @@ $('.reviews-slider').slick({
   dots: true,
 });
 
-$('.maps__list').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: true,
-});
+// $('.maps__list').slick({
+//   infinite: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   dots: true,
+// });
 
 $('.locations-slider').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  dots: true,
 });
